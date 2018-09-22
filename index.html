@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>優缽</title>
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/hamburgers.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+    <div id="main">
+        <div id="fixtag">
+            <a class="members_login">
+                <figure><img src="./assets/img/part/cut_29.gif"></figure>
+                <span class="txt">會員專區</span>
+            </a>
+        </div><!--./fixtag-->
+        <header id="header" style="background-image:url(assets/img/part/tmp_bg.jpg);">
+            <div class="main_content">
+                <figure class="logo">
+                    <img src="./assets/img/ubowl.png" title="台灣優鉢" alt="台灣優鉢"/>
+                </figure>
+                <div class="slogan">
+                    少使用一次性餐具，還給下一代乾淨、健康的環境。
+                </div>
+            </div>
+
+            <div class="more"></div>
+        </header><!--./header-->
+        <nav id="nav">
+            <div class="nav_content fix_content">
+                <div class="mobile_menu">
+                    <div class="hamburger hamburger--squeeze js-hamburger">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slogo" onclick="MemberLogout();">
+                    <img src="./assets/img/ubowl.png" title="台灣優鉢" alt="台灣優鉢"/>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a class="on about_us">關於我們</a>
+                        </li>
+                        <li>
+                            <a class="strong_title">費用介紹</a>
+                        </li>
+                        <li>
+                            <a class="description">租借流程</a>
+                        </li>
+                        <li>
+                            <a class="locations">合作店家</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="member_option">
+                        <a class="members_login">
+                            <img src="./assets/img/part/membericon.png" />
+                        </a>
+                </div>
+            </div>
+        </nav><!--./nav-->
+        <div id="about_us" class="bg_buttom_arrow">
+            <section>
+                <h1>
+                    <figure>
+                        <img src="./assets/img/part/cut_03.gif"/>
+                    </figure>
+                    <span class="title">關於我們</span>
+                </h1>
+                <h2>
+                    讓您隨手借 隨手還，  還給您愛家人愛地球，一樣自由 一樣美麗。
+                </h2>
+                <p>
+                    我們知道你了解一次性餐具造成環境許多危害要砍很多樹 氣候變得很奇怪 然後許多動物吃到垃圾 不然就是送去燒掉 最後回到你的身體讓您隨手借 隨手還 還給您愛家人愛地球 一樣自由 一樣美麗所以UBOWL和許多愛環境的店家合作 讓您隨手借 隨手還 還給您愛家人愛地球 一樣自由 一樣美麗 一樣自由 一樣美麗
+                </p>
+            </section>
+            <section>
+                <h1>
+                    <figure>
+                        <img src="./assets/img/part/cut_05.gif"/>
+                    </figure>
+                    <span class="title">關於餐具</span>
+                </h1>
+                <h2>
+                    此採最自然的全不鏽鋼接觸食材，一切只為了給您和家人 最好的環保安全用品。
+                </h2>
+                <p>
+                    UBOWL 安心提系列 （除提把外）使用全304內外不鏽鋼雙層碗通過嚴苛檢驗合格讓您與家人使用更安心 但是產品還是有缺點 可能會漏些許湯汁 這是因為 很多人建議我們使用 塑膠PP. PLA. PE. 矽膠. 玻璃 等等容器 但 玻璃 怕燙手易破  其他塑膠製品 使用條件嚴苛 可能不耐酸 鹼 太高溫 
+                </p>
+            </section>
+            <section>
+                <h1>
+                    <figure>
+                        <img src="./assets/img/part/cut_07.gif"/>
+                    </figure>
+                    <span class="title">關於愛環保的你</span>
+                </h1>
+                <h2>
+                    稍微用海綿清洗 請勿使用菜瓜布或鐵絲刷清洗 讓環保也可以體現臺灣人的乾淨和貼心！
+                </h2>
+                <p>
+                    當您與店家借走UBOWL時 如能於當天歸還到任何一家愛環境店家 煩請您把廚餘另外倒至回收桶 讓餐廳更好清洗如您無法當天歸還 煩請您 稍微用海綿清洗 請勿使用菜瓜布或鐵絲刷清洗 讓環保也可以體現臺灣人的乾淨和貼心！每一次的歸還,店家皆會使用 期盼您的支持 讓我們產品可以越來越精
+                </p>
+            </section>
+        </div><!--./about_us-->
+        <div id="strong_title">
+            <section>
+                <h1>會員費用為每月 <span class="nmb">69</span> 元</h1>
+                <p>
+                    <span class="small">可租借上限<span class="nmb">10</span>組餐具</span>
+                    <span>
+                        <img src="assets/img/part/browicon.png"/>
+                    </span>
+                </p>
+            </section>
+        </div><!--./strong_title-->
+        <div id="short_title">
+            本司提供之餐盒、筷、匙，皆為內外層全304不鏽鋼製，</br>
+            如您於12號租借5組餐具，16號又借5組，都尚未歸還，需先歸還方可續借，如17號歸還兩組，才能再借兩組，最高租借上限10組。
+        </div><!--./short_title-->
+        <div id="production" class="bg_buttom_arrow">
+            <section>
+                <figure><img src="./assets/img/part/product_demo1.png"></figure>
+                <p>
+                    餐盒市價 $ <span class="nmb">360</span>元/個
+                </p>
+                <span class="btn">
+                    檢驗報告 <span class="file-icon"></span>
+                </span>
+            </section>
+            <section>
+                <figure><img src="./assets/img/part/product_demo2.png"></figure>
+                <p>
+                    筷子市價 $ <span class="nmb">33</span>元/雙
+                </p>
+                <span class="btn">
+                    檢驗報告 <span class="file-icon"></span>
+                </span>
+            </section>
+            <section>
+                <figure><img src="./assets/img/part/product_demo3.png"></figure>
+                <p>
+                    湯匙市價 $ <span class="nmb">62</span>元/支
+                </p>
+                <span class="btn">
+                    檢驗報告 <span class="file-icon"></span>
+                </span>
+            </section>
+            <div class="join_members">
+                <a>加入會員</a>
+            </div>
+        </div><!--./production-->
+        <div id="description" class="bg_buttom_arrow">
+            <div class="product_lease">
+                <div>
+                    <h3>租借方式：</h3>
+                </div>
+                <div>
+                    <section>
+                        <figure>
+                            <span class="pc_procuct_img1"></span>
+                        </figure>
+                        <small>
+                            請先加入「UBOWL台灣優鉢」會員。
+                        </small>
+                        <i class="arrow"></i>
+                    </section>
+                    <section>
+                        <figure>
+                            <span class="pc_procuct_img2"></span>
+                        </figure>
+                        <small>
+                            至愛環境店家掃描QRcode租借。
+                        </small>
+                        <i class="arrow"></i>
+                    </section>
+                    <section>
+                        <figure>
+                            <span class="pc_procuct_img3" ></span>
+                        </figure>
+                        <small>
+                            選擇要租借的項目和數量。
+                        </small>
+                    </section>
+                </div>
+            </div>
+            <div class="product_return">
+                <div>
+                    <h3>歸還方式：</h3>
+                </div>
+                <div>
+                    <section>
+                        <figure>
+                            <span class="pc_procuct_img4"></span>
+                        </figure>
+                        <small>
+                            至愛環境店家掃描QRcode租借。
+                        </small>
+                        <i class="arrow"></i>
+                    </section>
+                    <section>
+                        <figure>
+                            <span class="pc_procuct_img5"></span>
+                        </figure>
+                        <small>
+                            選擇要歸還的項目和數量。
+                        </small>
+                        <i class="arrow"></i>
+                    </section>
+                    <section>
+                        <figure>
+                            <span class="pc_procuct_img6"></span>
+                        </figure>
+                        <small>
+                                如有租借超過10天未歸還，將電話關心使用狀況：經30天3次請求歸還。未歸還將收取產品重置費用。
+                        </small>
+                    </section>
+                </div>
+            </div>
+        </div><!--./description-->
+        <div id="locations">
+                <h3>愛環境店家 <img src="assets/img/part/cut_37.gif"/></h3>
+                <div class="swiper-container">
+                    <div class="button-prev"><img src="assets/img/part/cut_44.gif"/></div>
+                    <div class="button-next"><img src="assets/img/part/cut_41.gif"/></div>
+                    <div class="swiper-wrapper">
+                        <section class="swiper-slide">
+                            <p>
+                                <span class="btn" onclick="lend_borrow(1)">大采廚房</span>
+                            </p>
+                            <figure>
+                                <img src="assets/img/part/store1.jpg" />
+                            </figure>
+                            <phone><i class="phone-icon"></i>04-23726228</phone>
+                            <address>
+                                <i class="location-icon"></i>
+                                <span>
+                                    國美店<br />台中市美村路一段556號(五權一街美村路口)
+                                </span>
+                            </address>
+                        </section>
+                        <section class="swiper-slide">
+                            <p>
+                                <span class="btn" onclick="lend_borrow(2)">米蘭餐盒</span>
+                            </p>
+                            <figure>
+                                <img src="assets/img/part/store2.jpg" />
+                            </figure>
+                            <phone><i class="phone-icon"></i>0980-312-302</phone>
+                            <address>
+                                <i class="location-icon"></i>
+                                <span>
+                                    台中市西屯區櫻花路48號
+                                </span>
+                            </address>
+                        </section>
+                        <section class="swiper-slide">
+                            <p>
+                                <span class="btn" onclick="lend_borrow(3)">米蘭餐盒</span>
+                            </p>
+                            <figure>
+                                <img src="assets/img/part/store2.jpg" />
+                            </figure>
+                            <phone><i class="phone-icon"></i>04-23726228</phone>
+                            <address>
+                                <i class="location-icon"></i>
+                                <span>
+                                    台中市美村路一段556號(五權一街美村路口)
+                                </span>
+                            </address>
+                        </section>
+                        <section class="swiper-slide">
+                            <p>
+                                <span class="btn" onclick="lend_borrow(4)">米蘭餐盒</span>
+                            </p>
+                            <figure>
+                                <img src="assets/img/part/store2.jpg" />
+                            </figure>
+                            <phone><i class="phone-icon"></i>04-23726228</phone>
+                            <address>
+                                <i class="location-icon"></i>
+                                <span>
+                                    台中市美村路一段556號(五權一街美村路口)
+                                </span>
+                            </address>
+                        </section>
+                        <section class="swiper-slide">
+                            <p>
+                                <span class="btn" onclick="lend_borrow(5)">米蘭餐盒</span>
+                            </p>
+                            <figure>
+                                <img src="assets/img/part/store2.jpg" />
+                            </figure>
+                            <phone><i class="phone-icon"></i>04-23726228</phone>
+                            <address>
+                                <i class="location-icon"></i>
+                                <span>
+                                    台中市美村路一段556號(五權一街美村路口)
+                                </span>
+                            </address>
+                        </section>
+                    </div>
+                </div>
+        </div><!--./locations-->
+        <div id="addfriend">
+            <figure>
+                <i class="line-icon"></i>
+            </figure>
+        </div><!--./addfriend-->
+        <footer id="footer">
+            <div class="contact-info">
+                <span><figure><img src="assets/img/part/cut_61.gif"></figure>公司電話 <phone>04-22652055</phone></span>
+                <span><figure class="email"><img src="assets/img/part/cut_64.gif"></figure>E-mail <email>ubowl@inhandson.com.tw</email></span>
+            </div>
+            <div class="procity">
+                <a>會員條款</a>    |    <a>隱私權政策</a>    |    <a>Ubowl使用規範</a>
+            </div>
+            <small>Copyright &copy; UBOWL台灣優鉢</small>
+        </footer><!--./footer-->
+    </div><!--./main-->
+
+    <!--***********************************************-->
+    <!--Template Area-->
+    <!--***********************************************-->
+
+    <!--Member Login Template-->
+    <div id="member_login_temp">
+        <div class="member_page unselected">
+            <section class="switch">
+                <div class="tabarea">
+                    <span class="tab on">會員登入</span>
+                    <span class="tab">特許會員登入</span>
+                </div>
+            </section>
+            <section class="form on">
+                <form class="member_login">
+                    <div class="row">
+                        <label for="account">
+                            <figure>
+                                <i class="email_icon"></i>
+                            </figure>
+                            帳號(電子信箱)
+                        </label>
+                        <input type="text" id="email" name="email"  placeholder="請填寫會員帳號"/>
+                    </div>
+                    <div class="row">
+                        <label for="account">
+                            <figure>
+                                <i class="password_icon"></i>
+                            </figure>
+                            密碼
+                        </label>
+                        <span class="relative">
+                            <input type="password" class="password" id="password" name="password" placeholder="英文、數字8位數以上"/>
+                            <span class="eyes">
+                                    <i class="show"></i>
+                                    <i class="hide"></i>
+                            </span>
+                        </span>
+                        <div>
+                            <a class="forget_password">忘記密碼?</a>
+                        </div>
+                    </div>
+                    <div class="row sec">
+                        <figure class="google_captcha">
+                            <img src="https://s4.itho.me/sites/default/files/images/Recaptcha_anchor%402x.gif" width="310">
+                        </figure>
+                    </div>
+                    <div class="row sec center">
+                        <span class="btn" onclick="MemberLogin()">登入</span>
+                        <span class="btn fb">使用Facebook登入</span>
+                    </div>
+                    <div class="row sec space">
+                        <div class="line">
+                            <span class="register_btn">響應環保我要立即註冊</span>
+                        </div>
+                        
+                    </div>
+                </form>
+            </section>
+            <section class="form">
+                <form class="special_member_login">
+                        <div class="row">
+                            <label for="account">
+                                <figure>
+                                    <i class="member_icon"></i>
+                                </figure>
+                                帳號
+                            </label>
+                            <input type="text" id="special_mem_email" name="special_mem_email" placeholder="請填寫特許會員帳號"/>
+                        </div>
+                        <div class="row">
+                            <label for="account">
+                                <figure>
+                                    <i class="password_icon"></i>
+                                </figure>
+                                密碼
+                            </label>
+                            <span class="relative">
+                                <input type="password" class="password" id="special_mem_password" name="special_mem_password" placeholder="英文、數字8位數以上"/>
+                                <span class="eyes"></span>
+                            </span>
+                            <div>
+                                <a class="forget_password">忘記密碼?</a>
+                            </div>
+                        </div>
+                        <div class="row sec">
+                            <figure class="google_captcha">
+                                <img src="https://s4.itho.me/sites/default/files/images/Recaptcha_anchor%402x.gif" width="310">
+                            </figure>
+                        </div>
+                        <div class="row sec center">
+                            <span class="btn all" onclick="MemberLogin()">登入</span>
+                        </div>
+                    </form>
+            </section>
+        </div>
+    </div><!--./member_login_temp-->
+
+    <!--Member Register-->
+    <div id="member_register_temp">
+        <div class="member_register_page unselected">
+            <section>
+                <h3 class="page_title">會員註冊</h3>
+            </section>
+            <section class="form">
+                <form class="members_register">
+                        <div class="row">
+                            <label for="mem_email" class="space_left">
+                                帳號
+                            </label>
+                            <input type="text" id="mem_email" name="mem_email" placeholder="請填寫會員帳號"/>
+                        </div>
+                        <div class="row">
+                            <label for="mem_password" class="space_left">
+                                密碼
+                            </label>
+                            <span class="relative">
+                                <input type="password" class="password" id="mem_password" name="mem_password" placeholder="英文、數字8位數以上"/>
+                                <span class="eyes"></span>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <label for="mem_repassword" class="space_left">
+                                確認密碼
+                            </label>
+                            <span class="relative">
+                                <input type="password" class="password" id="mem_repassword" name="mem_repassword" placeholder="再次輸入您的密碼"/>
+                                <span class="eyes"></span>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <label for="mem_username" class="space_left">
+                                真實姓名
+                            </label>
+                            <input type="text" id="mem_username" name="mem_username" placeholder="請輸入您的真實姓名"/>
+                        </div>
+                        <div class="row">
+                            <label for="mem_birthday" class="space_left">
+                                出生日期
+                            </label>
+                            <input type="date" id="mem_birthday" name="mem_birthday" placeholder="日期格式:西元年-月-日" />
+                        </div>
+                        <div class="row">
+                            <label class="space_left">
+                                性別
+                            </label>
+                            <div class="radio">
+                                    <span class="box"><input id="mem_sexual_male" type="radio" name="mem_sexual" value="1" checked="checked"><label for="radio1">男</label></span>
+                                    <span class="box"><input id="mem_sexual_female" type="radio" name="mem_sexual" value="2"><label for="radio2">女</label></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="account" class="space_left">
+                                手機號碼
+                            </label>
+                            <input type="text" id="mem_phone" name="mem_phone" placeholder="請填寫正確的手機號碼"/>
+                            <div>
+                                <label class="space_left"></label>
+                                <span class="note">我們將發送簡訊授權碼至您的手機。</span>
+                            </div>
+                            <div>
+                                <label class="space_left"></label>
+                                <div class="checkbox">
+                                    <span class="box">
+                                        <input id="option" type="checkbox" name="field" value="option">
+                                        <label>我已閱讀並同意<a onclick="members_rules();">會員條款</a>與<a onclick="members_rules();">隱私權政策</a></label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="sms_btn">下一步</span>
+                        </div>
+                </form>
+            </section>
+        </div>
+    </div><!--./member_register_temp-->
+
+    <!--Member SMS Verify-->
+    <div id="members_sms_temp">
+        <div class="member_sms_page unselected">
+            <section>
+                <h3 class="page_title">手機認證</h3>
+            </section>
+            <section class="form">
+                <form class="members_sms">
+                        <div class="row">
+                            <small>已寄送認證碼至0900-000-000</small>
+                        </div>
+                        <div class="row">
+                            <input type="text" id="mem_verifycode" name="mem_verifycode" class="all" placeholder="請填寫認證碼"/>
+                        </div>
+                        <div class="row">
+                            <span class="register_btn btn gray">上一步</span>
+                        </div>
+                        <div class="row">
+                            <span class="member_final_btn btn" onclick="$.fancybox.close()">完成</span>
+                        </div>
+                </form>
+            </section>
+        </div>
+    </div><!--./members_sms_temp-->
+
+    <!--Member AREA-->
+    <div id="members_area_temp">
+        <div class="member_area_page unselected">
+                <div class="part">
+                    <section>
+                        <h3 class="page_title"><i class="ma_icon_members"></i> 會員專區</h3>
+                    </section>
+                    <section class="contents center">
+                            Hello，會員 O O O<br/>
+                            您目前的會員期限為 <span class="green">１07/07/31</span>，<br/>
+                            可租借的組數為<span class="blue"> 5 </span>組。
+                    </section>
+                </div>
+                <div class="part">
+                    <section>
+                        <h3 class="page_title"><i class="ma_icon_withdraw"></i> 儲值方案</h3>
+                    </section>
+                    <section class="contents">
+                        <ul class="withdraw_part options">
+                            <li><span class="v-m"><span class="green">$69</span>/月</span></li>
+                            <li><span class="v-m"><span class="green">$369</span>/半年</span></li>
+                            <li><span class="v-m on"><span class="green">$669</span>/年 <br/>(加送一個月)</span></li>
+                        </ul>
+                        <div>
+                            <span class="btn" onclick="withdraw_part_save();">儲值</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="part">
+                    <section>
+                        <h3 class="page_title nbt"><i class="ma_icon_withdraw"></i> 租賃紀錄</h3>
+                    </section>
+                    <section class="withdraw_record">
+                            <div class="tab on">
+                                    <div class="thead" onclick="withdraw_record_part(this);"><!--click 可開啟tbody內容-->
+                                            <span><i class="timer pad_hide"></i>2018/07/13</span>
+                                            <span class="center"><i class="location"></i>台中門市</span>
+                                            <span class="right"><span class="pad_hide">租借</span>3組<i class="sets"></i></span>
+                                    </div>
+                                    <div class="tbody">
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type1 right"><!--type1 已歸還, type2 未歸還, type3 處理中-->已歸還<i class="icon"></i></span>
+                                            </div>
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type2 right"><!--type1 已歸還, type2 未歸還, type3 處理中-->未歸還<i class="icon"></i></span>
+                                            </div>
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type3 right"><!--type1 已歸還, type2 未歸還, type3 處理中-->處理中<i class="icon"></i></span>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class="tab">
+                                    <div class="thead" onclick="withdraw_record_part(this);">
+                                            <span><i class="timer pad_hide"></i></i>2018/07/13</span>
+                                            <span class="center"><i class="location"></i>台中門市</span>
+                                            <span class="right"><span class="pad_hide">租借</span>3組<i class="sets"></i></span>
+                                    </div>
+                                    <div class="tbody">
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type1 right">已歸還<i class="icon"></i></span>
+                                            </div>
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type2 right">未歸還<i class="icon"></i></span>
+                                            </div>
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type3 right">處理中<i class="icon"></i></span>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class="tab">
+                                    <div class="thead" onclick="withdraw_record_part(this);">
+                                            <span><i class="timer pad_hide"></i></i>2018/07/13</span>
+                                            <span class="center"><i class="location"></i>台中門市</span>
+                                            <span class="right"><span class="pad_hide">租借</span>3組<i class="sets"></i></span>
+                                    </div>
+                                    <div class="tbody">
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type1 right">已歸還<i class="icon"></i></span>
+                                            </div>
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type2 right">未歸還<i class="icon"></i></span>
+                                            </div>
+                                            <div class="tr">
+                                                <span>環保餐盒</span>
+                                                <span class="center">1</span>
+                                                <span class="type3 right">處理中<i class="icon"></i></span>
+                                            </div>
+                                    </div>
+                            </div>
+                    </section>
+                </div>
+        </div>
+    </div><!--./members_area_temp-->
+
+    <!--Member Lend Borrow-->
+    <div id="members_lend_borrow_temp">
+        <div class="member_lend_borrow_page unselected">
+            <div class="area">
+                <span onclick="borrow();"><i class="borrow"></i></span>
+                <span onclick="lend();"><i class="lend"></i></span>
+            </div>
+            <div class="links">進入租借與歸還則表示同意<a onclick="members_rules2();">UBOWL使用規範。</a></div>
+        </div>
+    </div><!--./members_lend_borrow_temp-->
+
+    <!--Member Finished-->
+    <div id="members_finished_temp">
+        <div class="member_finished_page unselected">
+            <div class="area">
+                <span><i class="finished"></i></span>
+            </div>
+            <div class="text">Hello，會員ＯＯＯ，剩餘可租借的組數為 <span class="blue">5</span> 組。</div>
+            <div class="text gray">感謝您的租借，別忘了歸還喔！</div>
+        </div>
+    </div><!--./members_finished_temp-->
+
+    <!--Member Rule-->
+    <div id="members_rules_temp">
+        <div class="member_rules_page unselected">
+            <h2>會員條款</h2>
+            <h3>概述</h3>
+            <p>本隱私權條款解釋UBOWL台灣優鉢 （以下稱UBOWL）對使用UBOWL所有消費者提供的個人資訊，包括但不限於網站或手機APP介面（以下稱本網站）。請詳讀本隱私權條款並於使用UBOWL服務前確定了解本條款內容。當您瀏覽或使用本網站提供之服務，即表示您同意UBOWL蒐集、使用與轉載您提供的個人資訊。
+
+            UBOWL將需要哪些您的個人資訊 ? 
+            我們蒐集您提供於本網站上的資訊，包括您所訂購的餐點及服務，且對您所完成的消費者心得作紀錄。本網站有可能紀錄您在網站的瀏覽歷程紀錄。
+            UBOWL 將會蒐集您的個人資訊，包括您的所在位置及所需資訊（可能包含您的姓名、電子郵件、住家地址、電話號碼、與地理位置等），但僅會在您自願提供給我們的時候才使用該資訊。我們蒐集這些資訊僅會用於提供給您有關UBOWL或其他我們認為您可能有興趣的服務上。我們蒐集這些資訊可能經由：線上訂餐、參加活動、訂閱我們的電子報、創立使用者帳戶、傳送”聯絡我們”訊息或其他經由網站所得到的回覆，或經由廣告、調查與直銷。
+            我們將不會蒐集關於您個人的敏感資訊。</p>
+
+            <h3>瀏覽紀錄 </h3>
+            <p>部分資訊蒐集將不會有與您個人身份有關聯，但我們會對您在本網站上的瀏覽作紀錄，讓我們能更了解消費者使用網站的模式，並加強與增進您的減少使用免洗餐具體驗。我們可能會從瀏覽器歷程紀錄取得這些資訊。瀏覽紀錄是種從您的設備傳送的小型檔案，得以辨識與證明是從您的裝置而來，並允許您的裝置紀錄這些資訊以利您將來的使用。瀏覽紀錄並不包含任何個人身分的資訊，且我們也不會為了得到資訊而使用這些紀錄。UBOWL僅會在您主動提供時取得您的個人資訊。我們可能自您的移動裝置或您因使用我們服務所透過的媒介來取得科技上資訊，舉例來說，您的裝置所在位置資料與對外揭示的資料。攜帶式/運作系統包含裝置與其連線方式、IP位址、裝置所設定支付方式、與其他科技設備連動的資訊，如NFC、QR codes或其他移動裝置證件。如果您要從設定中變更，您的設備或網際網路瀏覽器應使您得以拒絕這些瀏覽紀錄。
+            關於更多瀏覽歷程紀錄，包括了解瀏覽紀錄如何被紀錄、如何變更與刪除，請詳見
+            www.allaboutcookies.org </p>
+
+            <h3>您的個人資訊的儲存與安全性 </h3>
+            <p>UBOWL將會盡其所能去維持您的個人資訊的安全性，並保護您的個人資訊不被誤用、干擾、遺失與阻擋未經授權的登入、修改或披露。如您已經不再需要適用於本隱私權條款，UBOWL 將會銷毀任何已持有的關於您的個人資訊。
+            若您設定登入本網站的密碼，您將有責任對您的密碼保密。我們建議您不要分享您的密碼給任何人。 
+            因為網際網路的本質，UBOWL 並不提供任何安全性的擔保與授權，除非您的個人資訊是傳達給我們或由我們所儲存，您須了解您在揭露個人資訊是有承擔風險的。如果您發覺到警示或懷疑在本網站有任何形式的未授權使用您的資訊，請儘速聯絡我們。 </p>
+
+            <h3>我們如何使用您的個人資訊</h3>
+           <p> 您同意UBOWL蒐集與使用您的個人資訊，於網站上以進行流程及發送訂單，且其他經由網站提供的服務。特別是您明確的同意UBOWL可能透露您的個人資訊，包括姓名、電子郵件、實際住址與聯絡電話，以使外送員或UBOWL的受雇人員能送達您的訂單，或第三方人員協助UBOWL提供外送服務。
+            您同意UBOWL使用您的個人資訊，於廣告與直銷上，通知您關於網站內容、商品與服務，或其他我們認為您有興趣的內容。
+            UBOWL 可能會透露您的個人資訊，且您同意個人資訊的披露，包括 <br>
+                • 其他隸屬於UBOWL集團的公司；以及<br>
+                • 受UBOWL聘僱的第三人或其他UBOWL合作商家及成員，在我們職務上執行或提供商品與服務，如付款的流程、發送信件、債款紀錄、調查、數值資訊、宣傳與直間接行銷；<br>
+            如果您不希望訂閱並接收到這些來自UBOWL的廣告資訊，或不想要我們分享您的個人資訊給這些單位，請email 至ubowl@inhandson.com.tw 或參考指示以取消訂閱任何您所收到我們寄送的資訊，並要求我們將您的個人資訊中自寄送清單中移除。我們將於收到您的要求的適當期間內，會盡應盡的努力以符合您的期望。
+            請注意您的個人資訊收回任何的第三方授權，將會使我們無法再提供任何服務給您。 
+            如具必要性或法律規定，或有合理必要性而需維護UBOWL的權益或資產，或因任何第三方，或避免任何個人受有侵害的情形下，UBOWL 保留權利以揭露您的個人資訊。
+            如果UBOWL 轉賣或合併予其他主體，將有部分或所有的個人資訊被提供給第三人。 </p>
+
+            <h3>使用您的個人資訊 </h3>
+            <p>UBOWL 將會盡其所能維持您的個人資訊正確、完整、更新、相關且不易誤解的。如果您想了解UBOWL所持有的您的個人資訊。我們將會在收到您的要求後的合理期間內，盡最大努力以提供您完整的個人資訊，請聯絡我們。並請寄email給我們到 以接收您的個人資訊副本。根據本地法令，UBOWL 保留收取部分因完成您的要求所支付規費的權利。 
+            如果是不正確、不完整或過時的，或要求個人資訊刪除，您可聯絡我們以更正任何關於您的個人資訊。我們會在接受到您的要求時的合理期間內，盡最大努力去依照您的要求做更正或刪除。<br>
+            刪除您於UBOWL的帳戶將不會自動刪除我們所保存關於您的個人資訊。如果您希望UBOWL 刪除所有關於您的個人資訊且註銷您的帳戶，請參考上述所提供的建議。<br>
+            請注意從我們的資料庫中刪除您的個人資訊將使我們無法再提供給您任何服務。<br>
+            如果實行的任何法令要求我們應保留部分您的個人資訊紀錄，將會凌駕於您的要求。在提供給您個人資訊副本時，我們可能要求您證明您的個人資訊。</p>
+
+            <h3>隱私權條款變更 </h3>
+            <p>UBOWL 保留權利變更任何本隱私權條款的內容。此外，任何變動將經由本網站告知，或經由電子郵件通知。</p>
+
+            <h3>其他網站 </h3>
+            <p>我們的網站可能連結到其他網站。本隱私權條款僅適用於本網站。您應先行閱讀其他網站的隱私權條款再行使用。 </p>
+
+            <h3>聯絡我們 </h3>
+            <p>如您對您的個人資訊有任何想法、建議或要求，歡迎寄到<a>ubowl@inhandson.com.tw</a> 告知我們。 </p>
+        </div>
+    </div><!--./members_rules_temp-->
+
+
+    <!--Member Rule2    -->
+    <div id="members_rule2_temp">
+            <div class="member_rule2_page unselected">
+                <h2>Ubowl使用規範</h2>
+                    <h3>（一）</h3>
+                    <p>
+                        本服務為立意良善之社會企業 協助台中市政府減棄計畫之目標！
+                    </p>
+                    <h3>（二）</h3>
+                    <p>
+                        本服務之不鏽鋼安心提餐具.筷.匙皆為UBOWL台灣優鉢絕對所有權<br>
+                        如有惡意破壞.侵佔.超過三個月不歸還,恐有重置價格之延伸費用,請見諒！
+                    </p>
+                    <h3>（三）</h3>
+                    <p>
+                        本司提供餐具租借服務,並無廚餘回收之服務,敬請自行回收,如有超過每日<br>
+                        00:00後歸還可能,請自行用海綿及洗碗精清洗,或至少用清水洗滌,以利商家更好清洗,讓您的環境更乾淨！謝謝您～
+                    </p>
+                    <h3>（四）</h3>
+                    <p>基於台灣善良民情風氣,本司竭盡可能,協助您使用上的任何問題及不便,有任何需要協助的地方,歡迎來信告知<a>ubowl@inhandson.com.tw</a> 或於<a>LINE@</a> 我們將竭誠為您服務！感謝您,為台灣的下一代盡一份心力！</p>
+                
+            </div>
+        </div>
+    </div><!--./members_rule2_temp-->
+
+
+    <!--Member Borrow or Lend -->
+    <div id="members_borrow_or_lend_temp">
+            <div class="member_borrow_or_lend_page unselected borrow"><!--class switch content: borrow, lend-->
+                    <div class="part">
+                            <section>
+                                <h3 class="page_title">Hello，會員 O O O，剩餘可租借的組數為 <span class="blue">5</span> 組。</h3>
+                            </section>
+                            <section class="contents center">
+                                    <p>您目前所在的門市：</p>
+                                    <P class="location_text">
+                                        <span class="blue"><i class="icon location"></i>台中門市</span>
+                                    </P>
+                                    <p class="p">
+                                        <i class="icon pointer"></i>門市地址：台中市西區台灣大道一段806號
+                                    </p>
+                                    <p class="p">
+                                        <i class="icon phone"></i>門市電話：04-123-1234
+                                    </p>
+                            </section>
+                    </div>
+                    <div class="part borrow">
+                            <section class="contents center">
+                                <h3 class="subtitle"><i class="black_bg">1</i> 選擇租借項目</h3>
+                                <ul class="options">
+                                    <li class="on">環保餐盒</li>
+                                    <li>環保筷</li>
+                                    <li>環保湯匙</li>
+                                </ul>
+                                    
+                                <h3 class="subtitle border_bottom">
+                                        <i class="black_bg">2</i> 數量
+                                    <span class="right">
+                                        <i class="blue_bg">-</i>
+                                        <span class="s_num">1</span>
+                                        <i class="blue_bg">+</i>
+                                    </span>
+                                </h3>
+
+                                <div class="block">
+                                    <span class="small_btn">
+                                        新增項目
+                                    </span>
+                                </div>
+
+                                <h3 class="subtitle"><i class="black_bg mr">3</i>您已選擇的租借項目：</h3>
+                                <ul class="lists">
+                                    <li>
+                                        <i class="blue_bg">-</i>
+                                        <span>環保餐盒</span>
+                                        <span>1</span>
+                                    </li>
+                                    <li>
+                                        <i class="blue_bg">-</i>
+                                        <span>環保筷</span>
+                                        <span>1</span>
+                                    </li>
+                                    <li>
+                                        <i class="blue_bg">-</i>
+                                        <span>環保湯匙</span>
+                                        <span>1</span>
+                                    </li>
+                                </ul>
+                                <span class="note">剩餘可租借的次數為 5 次</span>
+                                <span class="btn" onclick="start_borrow();">確定租借<i class="icon money"></i></span>
+                                <span class="note2">廚餘請自行回收處理，為了讓您的環境更乾淨，請用清水沖一下， 謝謝！</span>
+                            </section>
+                    </div>
+                    <div class="part lend">
+                            <section class="contents center">
+                                <h3 class="subtitle"><i class="icon choose"></i> 請選擇要歸還的項目</h3>
+                                
+                                <ul class="lists">
+                                    <li>
+                                        <span class="checkbox">
+                                            <span class="box">
+                                                <input id="option" type="checkbox" name="field" value="option">
+                                                <label> </label>
+                                            </span>
+                                        </span>
+                                
+                                        <span>環保餐盒</span>
+                                        
+                                        <span class="right">
+                                            <i class="blue_bg">-</i>
+                                            <span class="s_num">1</span>
+                                            <i class="blue_bg">+</i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="checkbox">
+                                            <span class="box">
+                                                <input id="option" type="checkbox" name="field" value="option">
+                                                <label> </label>
+                                            </span>
+                                        </span>
+                                        
+                                        <span>環保筷</span>
+                                        
+                                        <span class="right">
+                                            <i class="blue_bg">-</i>
+                                            <span class="s_num">1</span>
+                                            <i class="blue_bg">+</i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="checkbox">
+                                            <span class="box">
+                                                <input id="option" type="checkbox" name="field" value="option">
+                                                <label> </label>
+                                            </span>
+                                        </span>
+                                        
+                                        <span>環保湯匙</span>
+                                        
+                                        <span class="right">
+                                            <i class="blue_bg">-</i>
+                                            <span class="s_num">1</span>
+                                            <i class="blue_bg">+</i>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <span class="btn" onclick="start_lend();">確定歸還</span>
+                                <span class="note2">廚餘請自行回收處理，為了讓您的環境更乾淨，請用清水沖一下， 謝謝！</span>
+                            </section>
+                    </div>
+            </div>
+        </div>
+    </div><!--./members_borrow_or_lend_temp-->
+
+
+    <!--Member AREA-->
+    <div id="turnback_home_temp">
+        <div class="turnback_home_page unselected">
+        </div>
+    </div>
+    
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/local.js"></script>
+</body>
+</html>
