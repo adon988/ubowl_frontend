@@ -150,13 +150,7 @@ function start_lend(){
 function borrow_finished(){
     $.fancybox.close();
     $.fancybox.open({
-        src  : '#members_finished_temp',
-        beforeShow: function(){
-            $(".fancybox-container").addClass('green-bg');
-        },
-        beforeClose: function(){
-            $(".fancybox-container").removeClass('green-bg');
-        }
+        src  : '#members_finished_temp'
     });
 }
 
