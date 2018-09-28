@@ -189,11 +189,14 @@ function withdraw_part_save(){
 }
 //儲值記錄 手風琴
 function withdraw_record_part(tg){
-    if($(tg).parent().hasClass('on')){
-        $(tg).parent().removeClass('on');
-    }else{
-        $(tg).parent().parent().find('.tab').removeClass('on');
+    var tbody = $(tg).parent().find('.tbody');
+    if(tbody.css('display')=='none'){
         $(tg).parent().addClass('on');
+        tbody.stop().slideDown(200);
+    }else{
+        // $(tg).parent().parent().find('.tab').removeClass('on');
+        $(tg).parent().removeClass('on');
+        tbody.stop().slideUp(200);
     }
 }
 
