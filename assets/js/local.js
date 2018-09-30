@@ -95,16 +95,23 @@ $(".sms_btn").on('touchstart click', function(){
 });
 
 //借還首頁
-function lend_borrow($params){
-    console.log("click len_borrow :"+$params);
-    //...
+function lend_borrow(){
+    localStorage.setItem('lbEnableClose', 0);
     $.fancybox.close();
     $.fancybox.open({
         src  : '#members_lend_borrow_temp',
         beforeShow: function(){
             $(".fancybox-container").addClass('green-bg');
         },
+        afterShow: function(){
+            localStorage.setItem('lbEnableClose', 0);
+        },
         beforeClose: function(){
+            if(localStorage.getItem('lbEnableClose')==0){
+                //[注意!]如果在借還第一頁點關閉，就直接回到 index 首頁
+                window.open('index.html', '_self');
+                return false;
+            }
             $(".fancybox-container").removeClass('green-bg');
         }
     });
@@ -112,6 +119,7 @@ function lend_borrow($params){
 
 //借出
 function borrow(){
+    localStorage.setItem('lbEnableClose', 1);
     $.fancybox.close();
     $.fancybox.open({
         src  : '#members_borrow_or_lend_temp',
@@ -119,7 +127,14 @@ function borrow(){
             $(".member_borrow_or_lend_page").removeClass('lend').addClass('borrow');
             $(".fancybox-container").addClass('green-bg');
         },
+        afterShow: function(){
+            localStorage.setItem('lbEnableClose', 0);
+        },
         beforeClose: function(){
+            if(localStorage.getItem('lbEnableClose')==0){
+                lend_borrow();
+                return;
+            }
             $(".fancybox-container").removeClass('green-bg');
         }
     });
@@ -127,6 +142,7 @@ function borrow(){
 
 //歸還
 function lend(){
+    localStorage.setItem('lbEnableClose', 1);
     $.fancybox.close();
     $.fancybox.open({
         src  : '#members_borrow_or_lend_temp',
@@ -134,7 +150,14 @@ function lend(){
             $(".member_borrow_or_lend_page").removeClass('borrow').addClass('lend');
             $(".fancybox-container").addClass('green-bg');
         },
+        afterShow: function(){
+            localStorage.setItem('lbEnableClose', 0);
+        },
         beforeClose: function(){
+            if(localStorage.getItem('lbEnableClose')==0){
+                lend_borrow();
+                return;
+            }
             $(".fancybox-container").removeClass('green-bg');
         }
     });
@@ -148,9 +171,16 @@ function start_lend(){
 
 //借出成功
 function borrow_finished(){
+    localStorage.setItem('lbEnableClose', 1);
     $.fancybox.close();
     $.fancybox.open({
-        src  : '#members_finished_temp'
+        src  : '#members_finished_temp',
+        afterShow: function(){
+            localStorage.setItem('lbEnableClose', 0);
+        },
+        beforeClose: function(){
+            lend_borrow();
+        }
     });
 }
 
@@ -174,6 +204,24 @@ function members_rules2(){
     $.fancybox.close();
     $.fancybox.open({
         src  : '#members_rule2_temp'
+    });
+}
+
+function members_rules2_2(){
+    localStorage.setItem('lbEnableClose', 1);
+    $.fancybox.close();
+    $.fancybox.open({
+        src  : '#members_rule2_temp',
+        afterShow: function(){
+            localStorage.setItem('lbEnableClose', 0);
+        },
+        beforeClose: function(){
+            if(localStorage.getItem('lbEnableClose')==0){
+                lend_borrow();
+                return;
+            }
+            $(".fancybox-container").removeClass('green-bg');
+        }
     });
 }
 

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--上線前註解掉這行-->
+    <meta name="robots" content="noindex, nofollow">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>優缽</title>
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/hamburgers.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+    <div id="main">
+        <div id="fixtag">
+            <a class="members_login">
+                <figure><img src="./assets/img/part/cut_29.gif"></figure>
+                <span class="txt">會員專區</span>
+            </a>
+        </div><!--./fixtag-->
+        <nav id="nav">
+            <div class="nav_content fix_content">
+                <div class="mobile_menu">
+                    <div class="hamburger hamburger--squeeze js-hamburger">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slogo" onclick="window.open('index.html', '_self');">
+                    <img src="./assets/img/ubowl.png" title="台灣優鉢" alt="台灣優鉢"/>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a onclick="window.open('index.html', '_self')">關於我們</a>
+                        </li>
+                        <li>
+                            <a onclick="window.open('index.html', '_self')">費用介紹</a>
+                        </li>
+                        <li>
+                            <a onclick="window.open('index.html', '_self')">租借流程</a>
+                        </li>
+                        <li>
+                            <a class="on locations">合作店家</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="member_option">
+                        <a class="members_login">
+                            <img src="./assets/img/user_icon.svg" width="25" height="25" />
+                        </a>
+                </div>
+            </div>
+        </nav><!--./nav-->
+        <div id="store_bg" style="background-image: url(./assets/img/back_bg_03.png);">
+        </div><!--./store_bg-->
+        <div id="addfriend">
+            <figure>
+                <i class="line-icon"></i>
+            </figure>
+        </div><!--./addfriend-->
+        <footer id="footer">
+            <div class="contact-info">
+                <span><figure><img src="assets/img/part/cut_61.gif"></figure>公司電話 <phone>04-22652055</phone></span>
+                <span><figure class="email"><img src="assets/img/part/cut_64.gif"></figure>E-mail <email>ubowl@inhandson.com.tw</email></span>
+            </div>
+            <div class="procity">
+                <a>會員條款</a>    |    <a>隱私權政策</a>    |    <a>Ubowl使用規範</a>
+            </div>
+            <small>Copyright &copy; UBOWL台灣優鉢</small>
+        </footer><!--./footer-->
+    </div><!--./main-->
+
+    <!--***********************************************-->
+    <!--Template Area-->
+    <!--***********************************************-->
+
+    <!--Member Lend Borrow-->
+    <div id="members_lend_borrow_temp">
+        <div class="member_lend_borrow_page unselected">
+            <div class="area">
+                <span onclick="borrow();"><i class="borrow"></i></span>
+                <span onclick="lend();"><i class="lend"></i></span>
+            </div>
+            <div class="links">進入租借與歸還則表示同意<a onclick="members_rules2_2();">UBOWL使用規範</a>。</div>
+        </div>
+    </div><!--./members_lend_borrow_temp-->
+
+    <!--Member Finished-->
+    <div id="members_finished_temp">
+        <div class="member_finished_page unselected">
+            <div class="area">
+                <span><i class="finished"></i></span>
+            </div>
+            <div class="text">Hello，會員ＯＯＯ，剩餘可租借的組數為 <span class="blue">5</span> 組。</div>
+            <div class="text gray">感謝您的租借，別忘了歸還喔！</div>
+        </div>
+    </div><!--./members_finished_temp-->
+
+    <!--Member Rule-->
+    <div id="members_rules_temp">
+        <div class="member_rules_page unselected">
+            <h2>會員條款</h2>
+            <h3>概述</h3>
+            <p>本隱私權條款解釋UBOWL台灣優鉢 （以下稱UBOWL）對使用UBOWL所有消費者提供的個人資訊，包括但不限於網站或手機APP介面（以下稱本網站）。請詳讀本隱私權條款並於使用UBOWL服務前確定了解本條款內容。當您瀏覽或使用本網站提供之服務，即表示您同意UBOWL蒐集、使用與轉載您提供的個人資訊。
+
+            UBOWL將需要哪些您的個人資訊 ? 
+            我們蒐集您提供於本網站上的資訊，包括您所訂購的餐點及服務，且對您所完成的消費者心得作紀錄。本網站有可能紀錄您在網站的瀏覽歷程紀錄。
+            UBOWL 將會蒐集您的個人資訊，包括您的所在位置及所需資訊（可能包含您的姓名、電子郵件、住家地址、電話號碼、與地理位置等），但僅會在您自願提供給我們的時候才使用該資訊。我們蒐集這些資訊僅會用於提供給您有關UBOWL或其他我們認為您可能有興趣的服務上。我們蒐集這些資訊可能經由：線上訂餐、參加活動、訂閱我們的電子報、創立使用者帳戶、傳送”聯絡我們”訊息或其他經由網站所得到的回覆，或經由廣告、調查與直銷。
+            我們將不會蒐集關於您個人的敏感資訊。</p>
+
+            <h3>瀏覽紀錄 </h3>
+            <p>部分資訊蒐集將不會有與您個人身份有關聯，但我們會對您在本網站上的瀏覽作紀錄，讓我們能更了解消費者使用網站的模式，並加強與增進您的減少使用免洗餐具體驗。我們可能會從瀏覽器歷程紀錄取得這些資訊。瀏覽紀錄是種從您的設備傳送的小型檔案，得以辨識與證明是從您的裝置而來，並允許您的裝置紀錄這些資訊以利您將來的使用。瀏覽紀錄並不包含任何個人身分的資訊，且我們也不會為了得到資訊而使用這些紀錄。UBOWL僅會在您主動提供時取得您的個人資訊。我們可能自您的移動裝置或您因使用我們服務所透過的媒介來取得科技上資訊，舉例來說，您的裝置所在位置資料與對外揭示的資料。攜帶式/運作系統包含裝置與其連線方式、IP位址、裝置所設定支付方式、與其他科技設備連動的資訊，如NFC、QR codes或其他移動裝置證件。如果您要從設定中變更，您的設備或網際網路瀏覽器應使您得以拒絕這些瀏覽紀錄。
+            關於更多瀏覽歷程紀錄，包括了解瀏覽紀錄如何被紀錄、如何變更與刪除，請詳見
+            www.allaboutcookies.org </p>
+
+            <h3>您的個人資訊的儲存與安全性 </h3>
+            <p>UBOWL將會盡其所能去維持您的個人資訊的安全性，並保護您的個人資訊不被誤用、干擾、遺失與阻擋未經授權的登入、修改或披露。如您已經不再需要適用於本隱私權條款，UBOWL 將會銷毀任何已持有的關於您的個人資訊。
+            若您設定登入本網站的密碼，您將有責任對您的密碼保密。我們建議您不要分享您的密碼給任何人。 
+            因為網際網路的本質，UBOWL 並不提供任何安全性的擔保與授權，除非您的個人資訊是傳達給我們或由我們所儲存，您須了解您在揭露個人資訊是有承擔風險的。如果您發覺到警示或懷疑在本網站有任何形式的未授權使用您的資訊，請儘速聯絡我們。 </p>
+
+            <h3>我們如何使用您的個人資訊</h3>
+           <p> 您同意UBOWL蒐集與使用您的個人資訊，於網站上以進行流程及發送訂單，且其他經由網站提供的服務。特別是您明確的同意UBOWL可能透露您的個人資訊，包括姓名、電子郵件、實際住址與聯絡電話，以使外送員或UBOWL的受雇人員能送達您的訂單，或第三方人員協助UBOWL提供外送服務。
+            您同意UBOWL使用您的個人資訊，於廣告與直銷上，通知您關於網站內容、商品與服務，或其他我們認為您有興趣的內容。
+            UBOWL 可能會透露您的個人資訊，且您同意個人資訊的披露，包括 <br>
+                • 其他隸屬於UBOWL集團的公司；以及<br>
+                • 受UBOWL聘僱的第三人或其他UBOWL合作商家及成員，在我們職務上執行或提供商品與服務，如付款的流程、發送信件、債款紀錄、調查、數值資訊、宣傳與直間接行銷；<br>
+            如果您不希望訂閱並接收到這些來自UBOWL的廣告資訊，或不想要我們分享您的個人資訊給這些單位，請email 至ubowl@inhandson.com.tw 或參考指示以取消訂閱任何您所收到我們寄送的資訊，並要求我們將您的個人資訊中自寄送清單中移除。我們將於收到您的要求的適當期間內，會盡應盡的努力以符合您的期望。
+            請注意您的個人資訊收回任何的第三方授權，將會使我們無法再提供任何服務給您。 
+            如具必要性或法律規定，或有合理必要性而需維護UBOWL的權益或資產，或因任何第三方，或避免任何個人受有侵害的情形下，UBOWL 保留權利以揭露您的個人資訊。
+            如果UBOWL 轉賣或合併予其他主體，將有部分或所有的個人資訊被提供給第三人。 </p>
+
+            <h3>使用您的個人資訊 </h3>
+            <p>UBOWL 將會盡其所能維持您的個人資訊正確、完整、更新、相關且不易誤解的。如果您想了解UBOWL所持有的您的個人資訊。我們將會在收到您的要求後的合理期間內，盡最大努力以提供您完整的個人資訊，請聯絡我們。並請寄email給我們到 以接收您的個人資訊副本。根據本地法令，UBOWL 保留收取部分因完成您的要求所支付規費的權利。 
+            如果是不正確、不完整或過時的，或要求個人資訊刪除，您可聯絡我們以更正任何關於您的個人資訊。我們會在接受到您的要求時的合理期間內，盡最大努力去依照您的要求做更正或刪除。<br>
+            刪除您於UBOWL的帳戶將不會自動刪除我們所保存關於您的個人資訊。如果您希望UBOWL 刪除所有關於您的個人資訊且註銷您的帳戶，請參考上述所提供的建議。<br>
+            請注意從我們的資料庫中刪除您的個人資訊將使我們無法再提供給您任何服務。<br>
+            如果實行的任何法令要求我們應保留部分您的個人資訊紀錄，將會凌駕於您的要求。在提供給您個人資訊副本時，我們可能要求您證明您的個人資訊。</p>
+
+            <h3>隱私權條款變更 </h3>
+            <p>UBOWL 保留權利變更任何本隱私權條款的內容。此外，任何變動將經由本網站告知，或經由電子郵件通知。</p>
+
+            <h3>其他網站 </h3>
+            <p>我們的網站可能連結到其他網站。本隱私權條款僅適用於本網站。您應先行閱讀其他網站的隱私權條款再行使用。 </p>
+
+            <h3>聯絡我們 </h3>
+            <p>如您對您的個人資訊有任何想法、建議或要求，歡迎寄到<a>ubowl@inhandson.com.tw</a> 告知我們。 </p>
+        </div>
+    </div><!--./members_rules_temp-->
+
+
+    <!--Member Rule2    -->
+    <div id="members_rule2_temp">
+            <div class="member_rule2_page unselected" style="margin-bottom:130px;">
+                <h2>Ubowl使用規範</h2>
+                    <h3>（一）</h3>
+                    <p>
+                        本服務為立意良善之社會企業 協助台中市政府減棄計畫之目標！
+                    </p>
+                    <h3>（二）</h3>
+                    <p>
+                        本服務之不鏽鋼安心提餐具.筷.匙皆為UBOWL台灣優鉢絕對所有權<br>
+                        如有惡意破壞.侵佔.超過三個月不歸還,恐有重置價格之延伸費用,請見諒！
+                    </p>
+                    <h3>（三）</h3>
+                    <p>
+                        本司提供餐具租借服務,並無廚餘回收之服務,敬請自行回收,如有超過每日<br>
+                        00:00後歸還可能,請自行用海綿及洗碗精清洗,或至少用清水洗滌,以利商家更好清洗,讓您的環境更乾淨！謝謝您～
+                    </p>
+                    <h3>（四）</h3>
+                    <p>基於台灣善良民情風氣,本司竭盡可能,協助您使用上的任何問題及不便,有任何需要協助的地方,歡迎來信告知<a>ubowl@inhandson.com.tw</a> 或於<a>LINE@</a> 我們將竭誠為您服務！感謝您,為台灣的下一代盡一份心力！</p>
+                
+            </div>
+        </div>
+    </div><!--./members_rule2_temp-->
+
+
+    <!--Member Borrow or Lend -->
+    <div id="members_borrow_or_lend_temp">
+            <div class="member_borrow_or_lend_page unselected borrow"><!--class switch content: borrow, lend-->
+                    <div class="part">
+                            <section>
+                                <h3 class="page_title">Hello，會員 O O O，剩餘可租借的組數為 <span class="blue">5</span> 組。</h3>
+                            </section>
+                            <section class="contents center">
+                                    <p>您目前所在的門市：</p>
+                                    <P class="location_text">
+                                        <span class="blue"><i class="icon location"></i>台中門市</span>
+                                    </P>
+                                    <p class="p">
+                                        <i class="icon pointer"></i>門市地址：台中市西區台灣大道一段806號
+                                    </p>
+                                    <p class="p">
+                                        <i class="icon phone"></i>門市電話：04-123-1234
+                                    </p>
+                            </section>
+                    </div>
+                    <div class="part borrow">
+                            <section class="contents center">
+                                <h3 class="subtitle"><i class="icon_one"></i> 選擇租借項目</h3>
+                                <ul class="options">
+                                    <li class="on">環保餐盒</li>
+                                    <li>環保筷</li>
+                                    <li>環保湯匙</li>
+                                </ul>
+                                    
+                                <h3 class="subtitle border_bottom">
+                                        <i class="icon_two"></i> 數量
+                                    <span class="right">
+                                        <i class="minus"></i>
+                                        <span class="s_num">1</span>
+                                        <i class="plus"></i>
+                                    </span>
+                                </h3>
+
+                                <div class="block">
+                                    <span class="small_btn">
+                                        新增項目
+                                    </span>
+                                </div>
+
+                                <h3 class="subtitle"><i class="icon_three mr"></i>您已選擇的租借項目：</h3>
+                                <ul class="lists">
+                                    <li>
+                                        <i class="minus"></i>
+                                        <span>環保餐盒</span>
+                                        <span>1</span>
+                                    </li>
+                                    <li>
+                                        <i class="minus"></i>
+                                        <span>環保筷</span>
+                                        <span>1</span>
+                                    </li>
+                                    <li>
+                                        <i class="minus"></i>
+                                        <span>環保湯匙</span>
+                                        <span>1</span>
+                                    </li>
+                                </ul>
+                                <span class="note">剩餘可租借的次數為 5 次</span>
+                                <span class="btn" onclick="start_borrow();">確定租借<i class="icon money"></i></span>
+                                <span class="note2">廚餘請自行回收處理，為了讓您的環境更乾淨，請用清水沖一下， 謝謝！</span>
+                            </section>
+                    </div>
+                    <div class="part lend">
+                            <section class="contents center">
+                                <h3 class="subtitle"><i class="icon choose"></i> 請選擇要歸還的項目</h3>
+                                
+                                <ul class="lists">
+                                    <li>
+                                        <span class="checkbox">
+                                            <span class="box">
+                                                <input id="option" type="checkbox" name="field" value="option">
+                                                <label> </label>
+                                            </span>
+                                        </span>
+                                
+                                        <span>環保餐盒</span>
+                                        
+                                        <span class="right">
+                                            <i class="minus"></i>
+                                            <span class="s_num">1</span>
+                                            <i class="plus"></i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="checkbox">
+                                            <span class="box">
+                                                <input id="option" type="checkbox" name="field" value="option">
+                                                <label> </label>
+                                            </span>
+                                        </span>
+                                        
+                                        <span>環保筷</span>
+                                        
+                                        <span class="right">
+                                            <i class="minus"></i>
+                                            <span class="s_num">1</span>
+                                            <i class="plus"></i>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="checkbox">
+                                            <span class="box">
+                                                <input id="option" type="checkbox" name="field" value="option">
+                                                <label> </label>
+                                            </span>
+                                        </span>
+                                        
+                                        <span>環保湯匙</span>
+                                        
+                                        <span class="right">
+                                            <i class="minus"></i>
+                                            <span class="s_num">1</span>
+                                            <i class="plus"></i>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <span class="btn" onclick="start_lend();">確定歸還</span>
+                                <span class="note2">廚餘請自行回收處理，為了讓您的環境更乾淨，請用清水沖一下， 謝謝！</span>
+                            </section>
+                    </div>
+            </div>
+        </div>
+    </div><!--./members_borrow_or_lend_temp-->
+
+
+    <!--Member AREA-->
+    <div id="turnback_home_temp">
+        <div class="turnback_home_page unselected">
+        </div>
+    </div>
+    
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/local.js"></script>
+    
+    <!--Local Script-->
+    <script>
+    /**
+     * 載入即啟動頁面
+    */
+    lend_borrow();
+    </script>
+</body>
+</html>

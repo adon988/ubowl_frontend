@@ -235,7 +235,7 @@
                     <div class="swiper-wrapper">
                         <section class="swiper-slide">
                             <p>
-                                <span class="btn" onclick="lend_borrow(1)">大采廚房</span>
+                                <span class="btn" onclick="window.open('lend_borrow.html', '_self');">大采廚房</span>
                             </p>
                             <figure>
                                 <img src="assets/img/part/store1.jpg" />
@@ -250,7 +250,7 @@
                         </section>
                         <section class="swiper-slide">
                             <p>
-                                <span class="btn" onclick="lend_borrow(2)">米蘭餐盒</span>
+                                <span class="btn" onclick="window.open('lend_borrow.html', '_self');">米蘭餐盒</span>
                             </p>
                             <figure>
                                 <img src="assets/img/part/store2.jpg" />
@@ -265,7 +265,7 @@
                         </section>
                         <section class="swiper-slide">
                             <p>
-                                <span class="btn" onclick="lend_borrow(3)">米蘭餐盒</span>
+                                <span class="btn" onclick="window.open('lend_borrow.html', '_self');">米蘭餐盒</span>
                             </p>
                             <figure>
                                 <img src="assets/img/part/store2.jpg" />
@@ -280,7 +280,7 @@
                         </section>
                         <section class="swiper-slide">
                             <p>
-                                <span class="btn" onclick="lend_borrow(4)">米蘭餐盒</span>
+                                <span class="btn" onclick="window.open('lend_borrow.html', '_self');">米蘭餐盒</span>
                             </p>
                             <figure>
                                 <img src="assets/img/part/store2.jpg" />
@@ -640,29 +640,7 @@
                 </div>
         </div>
     </div><!--./members_area_temp-->
-
-    <!--Member Lend Borrow-->
-    <div id="members_lend_borrow_temp">
-        <div class="member_lend_borrow_page unselected">
-            <div class="area">
-                <span onclick="borrow();"><i class="borrow"></i></span>
-                <span onclick="lend();"><i class="lend"></i></span>
-            </div>
-            <div class="links">進入租借與歸還則表示同意<a onclick="members_rules2();">UBOWL使用規範</a>。</div>
-        </div>
-    </div><!--./members_lend_borrow_temp-->
-
-    <!--Member Finished-->
-    <div id="members_finished_temp">
-        <div class="member_finished_page unselected">
-            <div class="area">
-                <span><i class="finished"></i></span>
-            </div>
-            <div class="text">Hello，會員ＯＯＯ，剩餘可租借的組數為 <span class="blue">5</span> 組。</div>
-            <div class="text gray">感謝您的租借，別忘了歸還喔！</div>
-        </div>
-    </div><!--./members_finished_temp-->
-
+    
     <!--Member Rule-->
     <div id="members_rules_temp">
         <div class="member_rules_page unselected">
@@ -739,137 +717,6 @@
             </div>
         </div>
     </div><!--./members_rule2_temp-->
-
-
-    <!--Member Borrow or Lend -->
-    <div id="members_borrow_or_lend_temp">
-            <div class="member_borrow_or_lend_page unselected borrow"><!--class switch content: borrow, lend-->
-                    <div class="part">
-                            <section>
-                                <h3 class="page_title">Hello，會員 O O O，剩餘可租借的組數為 <span class="blue">5</span> 組。</h3>
-                            </section>
-                            <section class="contents center">
-                                    <p>您目前所在的門市：</p>
-                                    <P class="location_text">
-                                        <span class="blue"><i class="icon location"></i>台中門市</span>
-                                    </P>
-                                    <p class="p">
-                                        <i class="icon pointer"></i>門市地址：台中市西區台灣大道一段806號
-                                    </p>
-                                    <p class="p">
-                                        <i class="icon phone"></i>門市電話：04-123-1234
-                                    </p>
-                            </section>
-                    </div>
-                    <div class="part borrow">
-                            <section class="contents center">
-                                <h3 class="subtitle"><i class="icon_one"></i> 選擇租借項目</h3>
-                                <ul class="options">
-                                    <li class="on">環保餐盒</li>
-                                    <li>環保筷</li>
-                                    <li>環保湯匙</li>
-                                </ul>
-                                    
-                                <h3 class="subtitle border_bottom">
-                                        <i class="icon_two"></i> 數量
-                                    <span class="right">
-                                        <i class="minus"></i>
-                                        <span class="s_num">1</span>
-                                        <i class="plus"></i>
-                                    </span>
-                                </h3>
-
-                                <div class="block">
-                                    <span class="small_btn">
-                                        新增項目
-                                    </span>
-                                </div>
-
-                                <h3 class="subtitle"><i class="icon_three mr"></i>您已選擇的租借項目：</h3>
-                                <ul class="lists">
-                                    <li>
-                                        <i class="minus"></i>
-                                        <span>環保餐盒</span>
-                                        <span>1</span>
-                                    </li>
-                                    <li>
-                                        <i class="minus"></i>
-                                        <span>環保筷</span>
-                                        <span>1</span>
-                                    </li>
-                                    <li>
-                                        <i class="minus"></i>
-                                        <span>環保湯匙</span>
-                                        <span>1</span>
-                                    </li>
-                                </ul>
-                                <span class="note">剩餘可租借的次數為 5 次</span>
-                                <span class="btn" onclick="start_borrow();">確定租借<i class="icon money"></i></span>
-                                <span class="note2">廚餘請自行回收處理，為了讓您的環境更乾淨，請用清水沖一下， 謝謝！</span>
-                            </section>
-                    </div>
-                    <div class="part lend">
-                            <section class="contents center">
-                                <h3 class="subtitle"><i class="icon choose"></i> 請選擇要歸還的項目</h3>
-                                
-                                <ul class="lists">
-                                    <li>
-                                        <span class="checkbox">
-                                            <span class="box">
-                                                <input id="option" type="checkbox" name="field" value="option">
-                                                <label> </label>
-                                            </span>
-                                        </span>
-                                
-                                        <span>環保餐盒</span>
-                                        
-                                        <span class="right">
-                                            <i class="minus"></i>
-                                            <span class="s_num">1</span>
-                                            <i class="plus"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="checkbox">
-                                            <span class="box">
-                                                <input id="option" type="checkbox" name="field" value="option">
-                                                <label> </label>
-                                            </span>
-                                        </span>
-                                        
-                                        <span>環保筷</span>
-                                        
-                                        <span class="right">
-                                            <i class="minus"></i>
-                                            <span class="s_num">1</span>
-                                            <i class="plus"></i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="checkbox">
-                                            <span class="box">
-                                                <input id="option" type="checkbox" name="field" value="option">
-                                                <label> </label>
-                                            </span>
-                                        </span>
-                                        
-                                        <span>環保湯匙</span>
-                                        
-                                        <span class="right">
-                                            <i class="minus"></i>
-                                            <span class="s_num">1</span>
-                                            <i class="plus"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                                <span class="btn" onclick="start_lend();">確定歸還</span>
-                                <span class="note2">廚餘請自行回收處理，為了讓您的環境更乾淨，請用清水沖一下， 謝謝！</span>
-                            </section>
-                    </div>
-            </div>
-        </div>
-    </div><!--./members_borrow_or_lend_temp-->
-
 
     <!--Member AREA-->
     <div id="turnback_home_temp">
